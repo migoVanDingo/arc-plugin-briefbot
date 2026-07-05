@@ -192,6 +192,7 @@ REQUIRED_CLUSTER_COLUMNS = frozenset({
 REQUIRED_TOPIC_COLUMNS = frozenset({
     "topic_id", "name", "kind", "momentum",
     "count_1d", "count_3d", "count_7d",
+    "last_seen_at",   # get_top_topics ORDERs by it — must be schema-checked (M14)
 })
 
 
